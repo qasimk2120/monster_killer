@@ -46,7 +46,7 @@ function writeToLog(ev, val, monsterHealth, playerHealth) {
     event: ev,
     value: val,
     finalMonsterHealth: monsterHealth,
-    finalPlayerHealth: playerHealth,
+    finalPlayerHealth: playerHealth
   };
   switch (ev) {
     case LOG_EVENT_PLAYER_ATTACK:
@@ -58,7 +58,7 @@ function writeToLog(ev, val, monsterHealth, playerHealth) {
         value: val,
         target: 'MONSTER',
         finalMonsterHealth: monsterHealth,
-        finalPlayerHealth: playerHealth,
+        finalPlayerHealth: playerHealth
       };
       break;
     case LOG_EVENT_MONSTER_ATTACK:
@@ -67,7 +67,7 @@ function writeToLog(ev, val, monsterHealth, playerHealth) {
         value: val,
         target: 'PLAYER',
         finalMonsterHealth: monsterHealth,
-        finalPlayerHealth: playerHealth,
+        finalPlayerHealth: playerHealth
       };
       break;
     case LOG_EVENT_PLAYER_HEAL:
@@ -76,7 +76,7 @@ function writeToLog(ev, val, monsterHealth, playerHealth) {
         value: val,
         target: 'PLAYER',
         finalMonsterHealth: monsterHealth,
-        finalPlayerHealth: playerHealth,
+        finalPlayerHealth: playerHealth
       };
       break;
     case LOG_EVENT_GAME_OVER:
@@ -84,7 +84,7 @@ function writeToLog(ev, val, monsterHealth, playerHealth) {
         event: ev,
         value: val,
         finalMonsterHealth: monsterHealth,
-        finalPlayerHealth: playerHealth,
+        finalPlayerHealth: playerHealth
       };
       break;
     default:
